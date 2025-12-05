@@ -89,7 +89,7 @@ resource "azurerm_mssql_firewall_rule" "FirewallRule1" {
 }
 
 resource "azurerm_app_service_source_control" "github" {
-  app_id                 = "e5172350-16a1-4418-bf1d-339157b2378a"
+  app_id                 = azurerm_linux_web_app.alwa.id
   repo_url               = var.repo_url
   branch                 = "main"
   use_manual_integration = true
