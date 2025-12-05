@@ -5,7 +5,7 @@ variable "resource_group_name" {
 
 variable "resource_group_location" {
   description = "The Azure region to deploy resources"
-  type                                                = string
+  type        = string
 }
 
 variable "app_service_plan_name" {
